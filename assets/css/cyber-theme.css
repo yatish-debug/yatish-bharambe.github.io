@@ -1,0 +1,92 @@
+:root {
+    --cyber-green: #00ff41;
+    --cyber-dark: #0d0208;
+    --cyber-light: #003b00;
+}
+
+body {
+    background-color: var(--cyber-dark);
+    color: #ccc;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.cyber-header {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-bottom: 1px solid var(--cyber-green);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--cyber-green);
+    object-fit: cover;
+}
+
+.glitch {
+    position: relative;
+    color: var(--cyber-green);
+    font-size: 2.5rem;
+}
+
+.cyber-nav {
+    background: rgba(0, 59, 0, 0.2);
+    padding: 1rem;
+}
+
+.cyber-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cyber-nav a {
+    color: var(--cyber-green);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.cyber-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.cyber-card {
+    background: rgba(0, 59, 0, 0.1);
+    border-left: 3px solid var(--cyber-green);
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.cyber-button {
+    background: transparent;
+    color: var(--cyber-green);
+    border: 1px solid var(--cyber-green);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.cyber-footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--cyber-green);
+}
+
+@media (max-width: 768px) {
+    .cyber-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
